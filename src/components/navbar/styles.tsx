@@ -2,13 +2,13 @@ import styled from "styled-components";
 import logoTitle from "../../assets/logo/logoTitle.svg";
 
 export const Container = styled.div`
-  position: fixed;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   height: 50px;
   padding: 0 20px;
@@ -20,9 +20,16 @@ export const Container = styled.div`
     padding: 0 30px;
   }
   @media screen and (min-width: 1024px) {
-    min-width: 1440px;
     padding: 0 50px;
   }
+`;
+
+export const InnerContainer = styled.div`
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
 `;
 
 export const LeftMenuContainer = styled.div`
