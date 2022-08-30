@@ -31,6 +31,8 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     line-height: 1;
+    font-family: 'Jua', sans-serif;
+    color: #717171;
   }
   ol, ul {
     list-style: none;
