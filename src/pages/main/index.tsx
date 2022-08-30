@@ -5,7 +5,7 @@ const MainPage = () => {
   return (
     <>
       <Navbar />
-      <div style={{ marginTop: "60px" }}>메인페이지</div>
+      <div style={{ marginTop: "60px" }}>메인 페이지</div>
     </>
   );
 };
