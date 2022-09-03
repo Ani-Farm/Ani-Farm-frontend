@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../components/footer";
 import Navbar from "../../components/navbar";
 
 const MainPage = () => {
@@ -6,6 +7,7 @@ const MainPage = () => {
     <>
       <Navbar />
       <div style={{ marginTop: "60px" }}>메인 페이지</div>
+      <Footer />
     </>
   );
 };
