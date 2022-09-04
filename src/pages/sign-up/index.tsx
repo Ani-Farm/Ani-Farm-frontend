@@ -24,17 +24,27 @@ const SignUpPage = () => {
         <S.SignBox>
           <S.Title>회원 가입</S.Title>
           <S.SignForm onSubmit={handleSubmit(onSubmit)}>
-            <label>닉네임</label>
-            <S.Input placeholder="닉네임을 입력하세요" {...register("Nick")} />
-            <label>아이디</label>
-            <S.Input placeholder="아이디를 입력하세요" {...register("id")} />
-            <label>비밀번호</label>
+            <label htmlFor="nick">닉네임</label>
             <S.Input
+              id="nick"
+              placeholder="닉네임을 입력하세요"
+              {...register("Nick")}
+            />
+            <label htmlFor="id">아이디</label>
+            <S.Input
+              id="id"
+              placeholder="아이디를 입력하세요"
+              {...register("id")}
+            />
+            <label htmlFor="password">비밀번호</label>
+            <S.Input
+              id="password"
               placeholder="비밀번호를 입력하세요"
               {...register("password")}
             />
-            <label>비밀번호 확인</label>
+            <label htmlFor="passwordCheck">비밀번호 확인</label>
             <S.Input
+              id="passwordCheck"
               placeholder="비밀번호를 입력하세요"
               {...register("passwordCheck")}
             />

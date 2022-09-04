@@ -31,6 +31,10 @@ export const SignForm = styled.form`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+
+  & > label:hover {
+    opacity: 0.8;
+  }
 `;
 
 export const Input = styled.input`
@@ -47,6 +51,7 @@ export const Input = styled.input`
     height: 55px;
     width: 403px;
   }
+
   @media screen and (min-width: 1024px) {
     height: 57px;
     width: 433px;
@@ -70,6 +75,8 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   color: #000000;
+
+  cursor: pointer;
 
   :hover {
     font-size: 20px;
