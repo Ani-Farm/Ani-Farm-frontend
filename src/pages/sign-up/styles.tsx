@@ -1,7 +1,14 @@
 import styled from "styled-components";
 
+export const SignContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+`;
+
 export const SignBox = styled.div`
   width: 70%;
+  height: 100%;
   margin: 60px auto;
   display: flex;
   flex-direction: column;
@@ -28,27 +35,27 @@ export const SignForm = styled.form`
 
 export const Input = styled.input`
   width: 373px;
-  height: 42px;
+  height: 52px;
 
-  margin-top: 10px;
-  margin-bottom: 50px;
+  margin-top: 8px;
+  margin-bottom: 40px;
   background: #fafafa;
   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
 
   @media screen and (min-width: 768px) {
-    height: 50px;
+    height: 55px;
     width: 403px;
   }
   @media screen and (min-width: 1024px) {
-    height: 58px;
+    height: 57px;
     width: 433px;
   }
 `;
 
 export const Button = styled.button`
-  width: 300px;
-  height: 50px;
+  width: 250px;
+  height: 40px;
 
   margin: 0 auto;
   border: none;
@@ -57,7 +64,7 @@ export const Button = styled.button`
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 18px;
   display: flex;
   justify-content: center;
@@ -65,17 +72,21 @@ export const Button = styled.button`
   color: #000000;
 
   :hover {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   @media screen and (min-width: 768px) {
     font-size: 21px;
+    width: 275px;
+    height: 40px;
     :hover {
       font-size: 23px;
     }
   }
   @media screen and (min-width: 1024px) {
     font-size: 23px;
+    width: 280px;
+    height: 45px;
     :hover {
       font-size: 25px;
     }
