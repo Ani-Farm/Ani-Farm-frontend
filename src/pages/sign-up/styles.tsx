@@ -32,6 +32,10 @@ export const SignForm = styled.form`
   flex-direction: column;
   margin: 0 auto;
 
+  & > label:not(:first-child) {
+    margin-top: 20px;
+  }
+
   & > label:hover {
     opacity: 0.8;
   }
@@ -42,7 +46,7 @@ export const Input = styled.input`
   height: 52px;
 
   margin-top: 8px;
-  margin-bottom: 40px;
+  margin-bottom: 3px;
   background: #fafafa;
   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
@@ -63,6 +67,7 @@ export const Button = styled.button`
   height: 40px;
 
   margin: 0 auto;
+  margin-top: 20px;
   border: none;
   background: #d9d9d9;
   border-radius: 10px;
