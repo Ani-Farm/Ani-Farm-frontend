@@ -97,11 +97,13 @@ const SignUpPage = () => {
               })}
             />
             {errors.passwordCheck && <p>{errors.passwordCheck.message}</p>}
-            <S.Button type="submit">가입하기</S.Button>
+            <S.Button type="submit">
+              <span>가입하기</span>
+            </S.Button>
           </S.SignForm>
         </S.SignBox>
-        <Footer />
       </S.SignContainer>
+      <Footer />
     </>
   );
 };
