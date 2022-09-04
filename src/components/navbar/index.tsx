@@ -4,6 +4,7 @@ import { useNavigate } from "react-router";
 import * as S from "./styles";
 
 const Navbar = () => {
+  // 모바일 사이즈에서 햄버거 버튼 클릭 여부 state
   const [hambergerClick, setHambergerClick] = useState(false);
   const navigate = useNavigate();
   return (
