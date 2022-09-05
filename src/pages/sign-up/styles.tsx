@@ -7,9 +7,10 @@ export const SignContainer = styled.div`
 `;
 
 export const SignBox = styled.div`
-  width: 70%;
+  width: 100%;
   height: 100%;
   margin: 60px auto;
+  padding: 0 30px;
   display: flex;
   flex-direction: column;
 `;
@@ -47,7 +48,8 @@ export const SignForm = styled.form`
 `;
 
 export const Input = styled.input`
-  width: 373px;
+  width: 100%;
+  max-width: 373px;
   height: 52px;
 
   margin-top: 8px;

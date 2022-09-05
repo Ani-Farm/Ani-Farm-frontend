@@ -6,8 +6,6 @@ import { Container } from "../../components/navbar/styles";
 import { useForm, SubmitHandler } from "react-hook-form";
 import * as S from "./styles";
 import Footer from "../../components/footer";
-import { getValue } from "@testing-library/user-event/dist/types/utils";
-import { resourceLimits } from "worker_threads";
 
 interface ISignUp {
   Nick: String;
