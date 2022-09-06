@@ -8,7 +8,6 @@ const LoginPage = () => {
   return (
     <>
       <Navbar />
-      <div style={{ marginTop: "60px" }}>로그인 페이지</div>
       <S.Container>
         <S.LoginTitle>로그인</S.LoginTitle>
         <S.LoginContainer>
@@ -19,7 +18,7 @@ const LoginPage = () => {
           <S.LoginBtn>Login</S.LoginBtn>
         </S.LoginContainer>
         <S.SnsAndSignUpContainer>
-          <S.SnsSignUpBtn></S.SnsSignUpBtn>
+          <S.SnsSignUpBtn>카카오 로그인</S.SnsSignUpBtn>
           <S.SignUpAnchor>
             계정이 없나요? <Link to="/signup">가입</Link>
           </S.SignUpAnchor>

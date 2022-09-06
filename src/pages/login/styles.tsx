@@ -10,7 +10,7 @@ export const Container = styled.div`
   max-width: 300px;
   margin: 0 auto;
   margin-bottom: 40px;
-  margin-top: 60px;
+  margin-top: 90px;
 `;
 
 export const LoginTitle = styled.div`
@@ -25,7 +25,7 @@ export const LoginContainer = styled.div`
   align-items: center;
   background-color: #ffffff;
   width: 100%;
-  height: 200px;
+  height: 160px;
 `;
 
 export const LoginBox = styled.div`
@@ -53,8 +53,15 @@ export const PasswordInput = styled(LoginInput).attrs({
 
 export const LoginBtn = styled.button`
   background-color: #eeeeee;
-  width: 130px;
+  border: 1px solid #fafafa;
+  border-radius: 10px;
+  color: #766656;
+  font-size: 15px;
+  width: 100px;
   height: 40px;
+  &:hover {
+    opacity: 0.8;
+  }
 `;
 
 // export const Hr = styled.hr`
@@ -77,6 +84,8 @@ export const SnsAndSignUpContainer = styled.div`
 
 export const SnsSignUpBtn = styled.button`
   background-color: #fee502;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
   width: 150px;
   height: 40px;
 `;
