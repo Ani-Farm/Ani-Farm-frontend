@@ -5,9 +5,9 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 380px;
+  height: 360px;
   width: 65%;
-  max-width: 300px;
+  max-width: 380px;
   margin: 0 auto;
   margin-bottom: 40px;
   margin-top: 90px;
@@ -15,6 +15,7 @@ export const Container = styled.div`
 
 export const LoginTitle = styled.div`
   font-size: 30px;
+  padding-top: 25px;
   align-self: flex-start;
 `;
 
