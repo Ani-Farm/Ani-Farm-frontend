@@ -7,7 +7,7 @@ export const Container = styled.div`
   justify-content: space-between;
   height: 360px;
   width: 65%;
-  max-width: 380px;
+  max-width: 270px;
   margin: 0 auto;
   margin-bottom: 40px;
   margin-top: 90px;
@@ -50,6 +50,7 @@ export const LoginInput = styled.input.attrs({ placeholder: "로그인" })`
 
 export const PasswordInput = styled(LoginInput).attrs({
   placeholder: "비밀번호",
+  type: "password",
 })``;
 
 export const LoginBtn = styled.button`
@@ -60,6 +61,7 @@ export const LoginBtn = styled.button`
   font-size: 15px;
   width: 100px;
   height: 40px;
+  font-family: "Jua";
   &:hover {
     opacity: 0.8;
   }
@@ -86,6 +88,7 @@ export const SnsAndSignUpContainer = styled.div`
 export const SnsSignUpBtn = styled.button`
   background-color: #fee502;
   border: 1px solid #ffffff;
+  font-family: "Jua";
   border-radius: 10px;
   width: 150px;
   height: 40px;
