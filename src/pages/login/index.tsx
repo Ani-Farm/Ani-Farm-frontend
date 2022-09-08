@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../../components/footer";
 import Navbar from "../../components/navbar";
 import * as S from "./styles";
 
 const LoginPage = () => {
+  const [idInfo, setIdInfo] = useState({});
+
+  // const addIdInfo = (e: Event) => {
+  //   console.log(e.target.value);
+  // };
+  // const clickLoginBtn
+
   return (
     <>
       <Navbar />
