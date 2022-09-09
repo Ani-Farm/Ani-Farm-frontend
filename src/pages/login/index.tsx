@@ -4,25 +4,16 @@ import Footer from "../../components/footer";
 import Navbar from "../../components/navbar";
 import * as S from "./styles";
 
-interface ILogin {
-  id: string;
-  pw: string;
-}
-
 const LoginPage = () => {
-  const [idInfo, setIdInfo] = useState({ id: "", pw: "" });
   const [id, setId] = useState("");
   const [pw, setPw] = useState("");
-  const [first, setFirst] = useState(0);
+  const [checkInput, setCheckInput] = useState(0);
   const addIdInfo = (e: React.MouseEvent<HTMLButtonElement>) => {
-    if (id.length === 0 || pw.length === 0) {
-      console.log("빈캄임");
-      return;
-    }
-    console.log({
-      id,
-      pw,
-    });
+    setCheckInput(1);
+    let info = { id, pw };
+    console.log(info);
+    // axios 코드에 info 넣어주기
+    // 결과에 맞는 코드 작성하기
   };
 
   const onChangeValue = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -43,9 +34,25 @@ const LoginPage = () => {
         <S.LoginContainer>
           <S.LoginBox>
             <S.LoginInput onChange={onChangeValue}></S.LoginInput>
-            {id.length === 0 ? <div> 아이디 입력해주세요</div> : ""}
+            {checkInput === 1 ? (
+              id.length === 0 ? (
+                <S.WarningText>아이디를 입력해주세요</S.WarningText>
+              ) : (
+                ""
+              )
+            ) : (
+              ""
+            )}
             <S.PasswordInput onChange={onChangeValue}></S.PasswordInput>
-            {pw.length === 0 ? <div> 비번 입력해주세요</div> : ""}
+            {checkInput === 1 ? (
+              pw.length === 0 ? (
+                <S.WarningText>비밀번호를 입력해주세요</S.WarningText>
+              ) : (
+                ""
+              )
+            ) : (
+              ""
+            )}
           </S.LoginBox>
           <S.LoginBtn onClick={addIdInfo}>Login</S.LoginBtn>
         </S.LoginContainer>

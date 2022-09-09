@@ -56,7 +56,16 @@ export const LoginInput = styled.input.attrs({ placeholder: "로그인" })`
 export const PasswordInput = styled.input.attrs({
   placeholder: "비밀번호",
   type: "password",
-})``;
+})`
+  background-color: #fafafa;
+  padding: 0 5px;
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: 1px solid #fafafa;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+`;
 
 export const LoginBtn = styled.button`
   font-family: "Jua";
@@ -69,11 +78,11 @@ export const LoginBtn = styled.button`
   height: 40px;
 `;
 
-// export const Hr = styled.hr`
-//   position: absolute;
-//   width: 100%;
-//   color: black;
-// `;
+export const WarningText = styled.div`
+  color: red;
+  opacity: 0.5;
+  margin-bottom: 3px;
+`;
 
 export const SnsAndSignUpContainer = styled.div`
   display: flex;
