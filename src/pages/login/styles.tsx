@@ -7,7 +7,7 @@ export const Container = styled.div`
   justify-content: space-between;
   height: 360px;
   width: 65%;
-  max-width: 380px;
+  max-width: 270px;
   margin: 0 auto;
   margin-bottom: 500px;
   margin-top: 90px;
@@ -67,9 +67,6 @@ export const LoginBtn = styled.button`
   font-size: 15px;
   width: 100px;
   height: 40px;
-  & > span:hover {
-    opacity: 0.8;
-  }
 `;
 
 // export const Hr = styled.hr`
@@ -94,6 +91,7 @@ export const SnsSignUpBtn = styled.button`
   font-family: "Jua";
   background-color: #fee502;
   border: 1px solid #ffffff;
+  font-family: "Jua";
   border-radius: 10px;
   width: 150px;
   height: 40px;
