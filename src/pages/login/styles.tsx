@@ -9,7 +9,7 @@ export const Container = styled.div`
   width: 65%;
   max-width: 380px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 500px;
   margin-top: 90px;
 `;
 
@@ -35,6 +35,11 @@ export const LoginBox = styled.div`
   flex-direction: column;
   height: 90px;
   justify-content: space-between;
+
+  & > div {
+    color: red;
+    opacity: 0.4;
+  }
 `;
 
 export const LoginInput = styled.input.attrs({ placeholder: "로그인" })`
@@ -48,7 +53,7 @@ export const LoginInput = styled.input.attrs({ placeholder: "로그인" })`
   border-radius: 5px;
 `;
 
-export const PasswordInput = styled(LoginInput).attrs({
+export const PasswordInput = styled.input.attrs({
   placeholder: "비밀번호",
   type: "password",
 })``;
