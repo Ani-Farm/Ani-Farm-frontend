@@ -32,7 +32,7 @@ export const LoginBox = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
-  height: 110px;
+  height: 130px;
   justify-content: space-between;
   margin-bottom: 10px;
   & > div > div {

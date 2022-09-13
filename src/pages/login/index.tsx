@@ -1,3 +1,4 @@
+import { stringify } from "querystring";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../../components/footer";
@@ -7,9 +8,10 @@ import * as S from "./styles";
 const LoginPage = () => {
   const [id, setId] = useState("");
   const [pw, setPw] = useState("");
-  const [checkInput, setCheckInput] = useState(0);
+
+  const [checkInput, setCheckInput] = useState<string[]>([]);
   const addIdInfo = (e: React.MouseEvent<HTMLButtonElement>) => {
-    setCheckInput(1);
+    setCheckInput(["아이디 입력해주세요", "비밀번호 입력해주세요"]);
     let info = { id, pw };
     console.log(info);
     // axios 코드에 info 넣어주기
@@ -35,27 +37,13 @@ const LoginPage = () => {
           <S.LoginBox>
             <S.LoginDiv>
               <S.LoginInput onChange={onChangeValue}></S.LoginInput>
-              {checkInput === 1 ? (
-                id.length === 0 ? (
-                  <S.WarningText>아이디를 입력해주세요</S.WarningText>
-                ) : (
-                  ""
-                )
-              ) : (
-                ""
-              )}
+
+              <S.WarningText>{id.length ? null : checkInput[0]}</S.WarningText>
             </S.LoginDiv>
             <S.LoginDiv>
               <S.PasswordInput onChange={onChangeValue}></S.PasswordInput>
-              {checkInput === 1 ? (
-                pw.length === 0 ? (
-                  <S.WarningText>비밀번호를 입력해주세요</S.WarningText>
-                ) : (
-                  ""
-                )
-              ) : (
-                ""
-              )}
+
+              <S.WarningText>{pw.length ? null : checkInput[1]}</S.WarningText>
             </S.LoginDiv>
           </S.LoginBox>
           <S.LoginBtn onClick={addIdInfo}>Login</S.LoginBtn>
