@@ -35,9 +35,9 @@ export const LoginBox = styled.div`
   height: 110px;
   justify-content: space-between;
   margin-bottom: 10px;
-
   & > div > div {
     color: red;
+    font-size: 13px;
     opacity: 0.3;
   }
 `;
