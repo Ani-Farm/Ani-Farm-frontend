@@ -80,6 +80,11 @@ export const LoginBtn = styled.button`
   font-size: 15px;
   width: 100px;
   height: 40px;
+
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
 `;
 
 export const WarningText = styled.div`
@@ -109,6 +114,10 @@ export const SnsSignUpBtn = styled.button`
   border-radius: 10px;
   width: 150px;
   height: 40px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
 `;
 
 export const SignUpAnchor = styled.h3`
