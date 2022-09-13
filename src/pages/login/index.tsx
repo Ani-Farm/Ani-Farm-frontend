@@ -33,26 +33,30 @@ const LoginPage = () => {
         <S.LoginTitle>로그인</S.LoginTitle>
         <S.LoginContainer>
           <S.LoginBox>
-            <S.LoginInput onChange={onChangeValue}></S.LoginInput>
-            {checkInput === 1 ? (
-              id.length === 0 ? (
-                <S.WarningText>아이디를 입력해주세요</S.WarningText>
+            <S.LoginDiv>
+              <S.LoginInput onChange={onChangeValue}></S.LoginInput>
+              {checkInput === 1 ? (
+                id.length === 0 ? (
+                  <S.WarningText>아이디를 입력해주세요</S.WarningText>
+                ) : (
+                  ""
+                )
               ) : (
                 ""
-              )
-            ) : (
-              ""
-            )}
-            <S.PasswordInput onChange={onChangeValue}></S.PasswordInput>
-            {checkInput === 1 ? (
-              pw.length === 0 ? (
-                <S.WarningText>비밀번호를 입력해주세요</S.WarningText>
+              )}
+            </S.LoginDiv>
+            <S.LoginDiv>
+              <S.PasswordInput onChange={onChangeValue}></S.PasswordInput>
+              {checkInput === 1 ? (
+                pw.length === 0 ? (
+                  <S.WarningText>비밀번호를 입력해주세요</S.WarningText>
+                ) : (
+                  ""
+                )
               ) : (
                 ""
-              )
-            ) : (
-              ""
-            )}
+              )}
+            </S.LoginDiv>
           </S.LoginBox>
           <S.LoginBtn onClick={addIdInfo}>Login</S.LoginBtn>
         </S.LoginContainer>

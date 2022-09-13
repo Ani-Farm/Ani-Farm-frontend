@@ -4,7 +4,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   height: 360px;
   width: 65%;
   max-width: 270px;
@@ -22,24 +21,29 @@ export const LoginTitle = styled.div`
 export const LoginContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
   align-items: center;
   background-color: #ffffff;
+  margin-top: 10px;
   width: 100%;
-  height: 160px;
 `;
 
 export const LoginBox = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
-  height: 90px;
+  height: 110px;
   justify-content: space-between;
+  margin-bottom: 10px;
 
-  & > div {
+  & > div > div {
     color: red;
-    opacity: 0.4;
+    opacity: 0.3;
   }
+`;
+
+export const LoginDiv = styled.div`
+  height: 150px;
 `;
 
 export const LoginInput = styled.input.attrs({ placeholder: "로그인" })`
@@ -81,7 +85,7 @@ export const LoginBtn = styled.button`
 export const WarningText = styled.div`
   color: red;
   opacity: 0.5;
-  margin-bottom: 3px;
+  margin: 3px 0px;
 `;
 
 export const SnsAndSignUpContainer = styled.div`
@@ -94,6 +98,7 @@ export const SnsAndSignUpContainer = styled.div`
   background-color: #ffffff;
   border-top: 1px solid;
   padding-top: 20px;
+  margin-top: 10px;
 `;
 
 export const SnsSignUpBtn = styled.button`
