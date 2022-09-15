@@ -110,6 +110,7 @@ export const SnsSignUpBtn = styled.button`
   font-family: "Jua";
   background-color: #fee502;
   border: 1px solid #ffffff;
+  color: #766656;
   font-family: "Jua";
   border-radius: 10px;
   width: 150px;
