@@ -32,19 +32,6 @@ export const SignForm = styled.form`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-
-  & > p {
-    font-size: 0.8rem;
-    color: red;
-    opacity: 0.6;
-  }
-  & > label:not(:first-child) {
-    margin-top: 20px;
-  }
-
-  & > label:hover {
-    opacity: 0.8;
-  }
 `;
 
 export const Input = styled.input`
@@ -76,6 +63,7 @@ export const Button = styled.button`
   width: 250px;
   height: 40px;
 
+  font-family: "Jua", sans-serif;
   margin: 0 auto;
   margin-top: 20px;
   border: none;
@@ -107,3 +95,25 @@ export const Button = styled.button`
     height: 45px;
   }
 `;
+
+export const NickNameInput = styled.div`
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  & > p {
+    font-size: 0.8rem;
+    color: red;
+    opacity: 0.6;
+  }
+  & > label:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  & > label:hover {
+    opacity: 0.8;
+  }
+`;
+
+export const IdInput = styled(NickNameInput)``;
+export const PasswordInput = styled(NickNameInput)``;
+export const PasswordReInput = styled(NickNameInput)``;
