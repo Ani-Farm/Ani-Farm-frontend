@@ -75,13 +75,11 @@ export const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #000000;
+  color: #717171;
 
   cursor: pointer;
-  & span {
-    :hover {
-      opacity: 0.6;
-    }
+  :hover {
+    opacity: 0.6;
   }
 
   @media screen and (min-width: 768px) {
@@ -107,10 +105,6 @@ export const NickNameInput = styled.div`
   }
   & > label:not(:first-child) {
     margin-top: 20px;
-  }
-
-  & > label:hover {
-    opacity: 0.8;
   }
 `;
 

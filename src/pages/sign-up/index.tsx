@@ -18,7 +18,6 @@ const SignUpPage = () => {
   const { mutate } = useMutation(signUp);
 
   const onSubmit: SubmitHandler<SignType> = async (values, e) => {
-    console.log(values);
     const { nickname, id, password, password_re } = values;
     const data: SignType = {
       nickname,
@@ -27,9 +26,7 @@ const SignUpPage = () => {
       password_re,
     };
     mutate(data, {
-      onError(error) {
-        console.log(error);
-      },
+      onError(error) {},
     });
     e?.target.reset();
   };
