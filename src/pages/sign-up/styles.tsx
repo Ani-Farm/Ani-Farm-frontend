@@ -21,10 +21,10 @@ export const Title = styled.h1`
   margin: 2rem;
 
   @media screen and (min-width: 768px) {
-    font-size: 40px;
+    font-size: 36px;
   }
   @media screen and (min-width: 1024px) {
-    font-size: 48px;
+    font-size: 40px;
   }
 `;
 
@@ -37,7 +37,7 @@ export const SignForm = styled.form`
 export const Input = styled.input`
   width: 100%;
   max-width: 373px;
-  height: 52px;
+  height: 40px;
 
   margin-top: 8px;
   margin-bottom: 3px;
@@ -49,12 +49,10 @@ export const Input = styled.input`
   outline: none;
 
   @media screen and (min-width: 768px) {
-    height: 55px;
     width: 403px;
   }
 
   @media screen and (min-width: 1024px) {
-    height: 57px;
     width: 433px;
   }
 `;
@@ -99,12 +97,16 @@ export const NickNameInput = styled.div`
   display: flex;
   flex-direction: column;
   & > p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     color: red;
     opacity: 0.6;
   }
   & > label:not(:first-child) {
     margin-top: 20px;
+  }
+
+  & > label {
+    font-size: 13px;
   }
 `;
 
