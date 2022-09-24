@@ -46,7 +46,7 @@ export const LoginDiv = styled.div`
   height: 150px;
 `;
 
-export const LoginInput = styled.input.attrs({ placeholder: "로그인" })`
+export const LoginInput = styled.input.attrs({ placeholder: "아이디" })`
   background-color: #fafafa;
   padding: 0 5px;
   width: 100%;
