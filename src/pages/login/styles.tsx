@@ -35,11 +35,11 @@ export const LoginBox = styled.div`
   height: 130px;
   justify-content: space-between;
   margin-bottom: 10px;
-  & > div > div {
+  /* & > div > div {
+    font-size: 0.6rem;
     color: red;
-    font-size: 13px;
-    opacity: 0.3;
-  }
+    opacity: 0.6;
+  } */
 `;
 
 export const LoginDiv = styled.div`
@@ -88,9 +88,10 @@ export const LoginBtn = styled.button`
 `;
 
 export const WarningText = styled.div`
+  font-size: 0.6rem;
   color: red;
-  opacity: 0.5;
-  margin: 3px 0px;
+  opacity: 0.6;
+  margin-top: 1px;
 `;
 
 export const SnsAndSignUpContainer = styled.div`

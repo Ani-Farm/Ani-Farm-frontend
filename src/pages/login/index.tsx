@@ -10,7 +10,7 @@ const LoginPage = () => {
 
   const [checkInput, setCheckInput] = useState<string[]>([]);
   const addIdInfo = (e: React.MouseEvent<HTMLButtonElement>) => {
-    setCheckInput(["아이디 입력해주세요", "비밀번호 입력해주세요"]);
+    setCheckInput(["아이디 입력해주세요!", "비밀번호 입력해주세요!"]);
     let info = { id, pw };
     console.log(info);
     // axios 코드에 info 넣어주기
